@@ -7,8 +7,8 @@ const NavBar = () => {
         <Link to="/" className="font-black uppercase text-neutral-600 text-2xl">#VanLife</Link>
       </div>
       <div className="flex gap-4">
-        <Link to="About" className="font-semibold">About</Link>
-        <Link to="Vans" className="font-semibold">Van</Link>
+        <Link to="about" className="font-semibold">About</Link>
+        <Link to="vans" className="font-semibold">Vans</Link>
       </div>
     </nav>
   );
