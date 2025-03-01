@@ -1,20 +1,9 @@
 import { Link } from "react-router-dom";
 import Badge from "../components/Badge";
 import vans from "../data/vans.js";
+import { getBadgeColor } from "../utils/utils";
 
 const VanPage = () => {
-  const getBadgeColor = (category) => {
-    switch (category) {
-      case "Simple":
-        return "bg-brand-400";
-      case "Luxury":
-        return "bg-neutral-500";
-      case "Rugged":
-        return "bg-accent-green";
-      default:
-        return "bg-brand-400";
-    }
-  };
 
   return (
     <main className="w-5/6 mx-auto md:w-1/2">
