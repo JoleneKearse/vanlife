@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import Badge from "../components/Badge";
-import vans from "../data/vans.js";
-import { getBadgeColor } from "../utils/utils";
+import Badge from "../../components/Badge";
+import vans from "../../data/vans.js";
+import { getBadgeColor } from "../../utils/utils";
 
 const VanPage = () => {
 

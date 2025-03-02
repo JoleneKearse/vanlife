@@ -1,8 +1,8 @@
 import { Link, useParams } from "react-router-dom";
-import Badge from "../components/Badge";
-import Button from "../components/Button";
-import vans from "../data/vans.js";
-import { getBadgeColor } from "../utils/utils.js";
+import Badge from "../../components/Badge.jsx";
+import Button from "../../components/Button.jsx";
+import vans from "../../data/vans.js";
+import { getBadgeColor } from "../../utils/utils.js";
 
 const VanDetailPage = () => {
   const params = useParams();
