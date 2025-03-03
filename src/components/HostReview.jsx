@@ -7,7 +7,7 @@ const HostReview = () => {
         <p>Review score</p>
         <div className="flex items-center gap-2">
           <img src="/star.svg" alt="" />
-          <p><span id="host-rating">5.0</span>/5</p>
+          <p className="text-neutral-300"><span id="host-rating" className="text-neutral-500">5.0</span>/5</p>
         </div>
         
       </div>

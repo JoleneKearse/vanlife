@@ -4,7 +4,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import VanPage from "./pages/Vans/VanPage";
 import VanDetailPage from "./pages/Vans/VanDetailPage";
-import HostPage from "./pages/Host/HostPage";
+import HostDashboard from "./pages/Host/HostDashboard";
 import HostLayout from "./pages/Host/HostLayout";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
           <Route path="/vans" element={<VanPage />} />
           <Route path="/vans/:id" element={<VanDetailPage />} />
           <Route element={<HostLayout />}>
-            <Route path="/host" element={<HostPage />} />
+            <Route path="/host" element={<HostDashboard />} />
           </Route>
         </Route>
       </Routes>

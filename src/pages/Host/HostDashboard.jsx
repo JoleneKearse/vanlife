@@ -1,7 +1,7 @@
 import HostReview from "../../components/HostReview";
 import HostWelcome from "../../components/HostWelcome";
 
-const HostPage = () => {
+const HostDashboard = () => {
   return (
     <div className="">
       <HostWelcome />
@@ -10,4 +10,4 @@ const HostPage = () => {
   );
 }
 
-export default HostPage;
+export default HostDashboard;

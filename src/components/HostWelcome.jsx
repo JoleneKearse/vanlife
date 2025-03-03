@@ -8,7 +8,7 @@ const HostWelcome = () => {
         <p>Income last <span className="underline font-medium">30 days</span></p>
         <Link to="/income">Details</Link>
       </div>
-      <p className="font-extrabold text-7xl">$2,260</p>
+      <p className="font-extrabold text-7xl" id="host-income-amt">$2,260</p>
     </div>
   );
 }
