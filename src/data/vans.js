@@ -67,4 +67,40 @@ const vans = [
 	},
 ];
 
-export default vans;
+const hostVans = [
+	{
+		id: 1,
+		name: "Modest Explorer",
+		price: 60,
+		category: "Simple",
+		description:
+			"The Modest Explorer is a van designed to get you out of the house and into nature. This beauty is equipped with solar panels, a composting toilet, a water tank and kitchenette. The idea is that you can pack up your home and escape for a weekend or even longer!",
+		visibility: "Public",
+		image: "/modest-explorer.webp",
+		alt: "A tan and white VW van with a pop-up tent on the roof. Parked on the side of the road overlooking a sea with mountains in the distance.",
+	},
+	{
+		id: 2,
+		name: "Beach Bum",
+		price: 80,
+		category: "Rugged",
+		description:
+			"Beach Bum is a van inspired by surfers and travelers. It was created to be a portable home away from home, but with some cool features in it you won't find in an ordinary camper.",
+		visibility: "Public",
+		image: "/beach-bum.webp",
+		alt: "A blue and white VW van packed in a field with a camping chair and umbrella set outside.",
+	},
+	{
+		id: 6,
+		name: "Green Wonder",
+		price: 70,
+		category: "Rugged",
+		description:
+			"With this van, you can take your travel life to the next level. The Green Wonder is a sustainable vehicle that's perfect for people who are looking for a stylish, eco-friendly mode of transport that can go anywhere.",
+		visibility: "Public",
+		image: "/green-wonder.webp",
+		alt: "A green and white VW van with abstract white trees on the back sides. Parked overlooking a lake in the forest with mountains in the background.",
+	},
+]
+
+export { vans, hostVans };

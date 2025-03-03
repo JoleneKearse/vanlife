@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import HostLinkTo from "./HostLinkTo";
 
 const HostWelcome = () => {
   return (
@@ -6,7 +6,7 @@ const HostWelcome = () => {
       <h1 className="font-bold text-6xl">Welcome!</h1>
       <div className="flex justify-between text-neutral-400">
         <p>Income last <span className="underline font-medium">30 days</span></p>
-        <Link to="/income">Details</Link>
+        <HostLinkTo to="/host/income">Details</HostLinkTo>
       </div>
       <p className="font-extrabold text-7xl" id="host-income-amt">$2,260</p>
     </div>

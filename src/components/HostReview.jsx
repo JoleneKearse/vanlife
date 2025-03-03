@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import HostLinkTo from "./HostLinkTo";
 
 const HostReview = () => {
   return (
@@ -11,7 +11,7 @@ const HostReview = () => {
         </div>
         
       </div>
-      <Link to="/host/reviews" className="font-medium">Details</Link>
+      <HostLinkTo to="/host/reviews">Details</HostLinkTo>
     </article>
   );
 }
