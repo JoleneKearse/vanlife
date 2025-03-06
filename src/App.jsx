@@ -4,7 +4,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import VanPage from "./pages/Vans/VanPage";
 import VanDetailPage from "./pages/Vans/VanDetailPage";
-import HostLayout from "./pages/Host/HostLayout";
+import HostLayout from "./components/HostLayout";
 import HostDashboard from "./pages/Host/HostDashboard";
 import HostVansPage from "./pages/Host/HostVansPage";
 

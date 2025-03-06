@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import HostTabs from "../../components/HostTabs";
+import HostTabs from "./HostTabs";
 
 const HostLayout = () => {
   return (
