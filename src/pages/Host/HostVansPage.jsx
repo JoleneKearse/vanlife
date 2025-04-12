@@ -2,7 +2,7 @@ import HostVanList from "../../components/HostVanList";
 
 const HostVansPage = () => {
   return (
-    <HostVanList links={false} />
+    <HostVanList showLinks={false} />
   );
 }
 

@@ -1,6 +1,7 @@
-import { hostVans } from '../data/vans';
-import VanCardCondensed from './VanCardCondensed';
-import HostLinkTo from './HostLinkTo';
+import { Link } from "react-router-dom";
+import { hostVans } from "../data/vans";
+import VanCardCondensed from "./VanCardCondensed";
+import HostLinkTo from "./HostLinkTo";
 
 const HostVanList = ({ showLinks }) => {
   return (
@@ -10,10 +11,18 @@ const HostVanList = ({ showLinks }) => {
         {showLinks && <HostLinkTo to="/host/vans">View all</HostLinkTo>}
       </div>
       {hostVans.map((van) => (
-        <VanCardCondensed key={van.id} showLinks={true} name={van.name} img={van.image} price={van.price} />
+        <Link to={`/host/vans/${van.id}`} key={van.id}>
+          <VanCardCondensed
+            key={van.id}
+            showLinks={showLinks}
+            name={van.name}
+            img={van.image}
+            price={van.price}
+          />
+        </Link>
       ))}
     </article>
   );
-}
+};
 
 export default HostVanList;

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "../components/Button";
 
 const HomePage = () => {
@@ -11,14 +12,16 @@ const HomePage = () => {
           Add adventure to your life by joining the #vanlife movement. Rent the
           perfect van to make your perfect road trip.
         </p>
-        <Button
-          btnColor="bg-brand-500"
-          btnTextColor="text-neutral-100"
-          btnWeight="font-bold"
-          btnWidth="w-full"
-        >
-          Find your van
-        </Button>
+        <Link to="/vans" className="w-full">
+          <Button
+            btnColor="bg-brand-500"
+            btnTextColor="text-neutral-100"
+            btnWeight="font-bold"
+            btnWidth="w-full"
+          >
+            Find your van
+          </Button>
+        </Link>
       </div>
     </main>
   );
