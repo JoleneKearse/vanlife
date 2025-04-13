@@ -12,7 +12,7 @@ const VanCardCondensed = ({ showLinks, name, img, price }) => {
           </div>
         </div>
         {/* TODO: Adjust to include id */}
-        {showLinks && <HostLinkTo to="/host/vans/:id">Edit</HostLinkTo>}
+        {showLinks && <HostLinkTo to="/host/vans/:id" fontStyle="bold">Edit</HostLinkTo>}
       </div>
     </article>
   );

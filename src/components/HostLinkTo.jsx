@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-const HostLinkTo = ({ to, children }) => {
+const HostLinkTo = ({ to, fontStyle, children }) => {
   return (
-    <Link to={to} className="font-medium">{children}</Link>
+    <Link to={to} className={fontStyle === "bold" ? "font-medium" : "underline"}>{children}</Link>
   );
 }
 

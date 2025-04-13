@@ -8,7 +8,7 @@ const HostVanList = ({ showLinks }) => {
     <article className="bg-brand-100 px-6 py-8">
       <div className="flex justify-between items-center mb-4">
         <p className="font-bold text-4xl">Your listed vans</p>
-        {showLinks && <HostLinkTo to="/host/vans">View all</HostLinkTo>}
+        {showLinks && <HostLinkTo to="/host/vans" fontStyle="bold">View all</HostLinkTo>}
       </div>
       {hostVans.map((van) => (
         <Link to={`/host/vans/${van.id}`} key={van.id}>

@@ -1,49 +1,20 @@
-import { NavLink } from "react-router-dom";
+import Tab from "./Tab";
 
 const HostTabs = () => {
   return (
     <nav className="mb-14">
       <ul className="flex gap-8 text-neutral-500 text-lg underline-offset-6">
         <li>
-          <NavLink
-            to="/host"
-            end
-            className={({ isActive }) =>
-              isActive ? "underline text-neutral-500 font-bold" : null
-            }
-          >
-            Dashboard
-          </NavLink>
+          <Tab to="/host">Dashboard</Tab>
         </li>
         <li>
-          <NavLink
-            to="/host/income"
-            className={({ isActive }) =>
-              isActive ? "underline text-neutral-500 font-bold" : null
-            }
-          >
-            Income
-          </NavLink>
+          <Tab to="/host/income">Income</Tab>
         </li>
         <li>
-          <NavLink
-            to="/host/vans"
-            className={({ isActive }) =>
-              isActive ? "underline text-neutral-500 font-bold" : null
-            }
-          >
-            Vans
-          </NavLink>
+          <Tab to="/host/vans">Vans</Tab>
         </li>
         <li>
-          <NavLink
-            to="/host/reviews"
-            className={({ isActive }) =>
-              isActive ? "underline text-neutral-500 font-bold" : null
-            }
-          >
-            Reviews
-          </NavLink>
+          <Tab to="/host/reviews">Reviews</Tab>
         </li>
       </ul>
     </nav>

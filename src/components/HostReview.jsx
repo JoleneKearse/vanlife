@@ -11,7 +11,7 @@ const HostReview = () => {
         </div>
         
       </div>
-      <HostLinkTo to="/host/reviews">Details</HostLinkTo>
+      <HostLinkTo to="/host/reviews" fontStyle="bold">Details</HostLinkTo>
     </article>
   );
 }
