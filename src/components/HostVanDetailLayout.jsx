@@ -31,13 +31,13 @@ const HostVanDetailLayout = () => {
         <nav className="mb-8">
           <ul className="flex gap-8 text-neutral-500 text-md underline-offset-6">
             <li>
-              <Tab to={`/host/vans/${van.id}`}>Details</Tab>
+              <Tab to=".">Details</Tab>
             </li>
             <li>
-              <Tab to={`/host/vans/${van.id}/pricing`}>Pricing</Tab>
+              <Tab to="pricing">Pricing</Tab>
             </li>
             <li>
-              <Tab to={`/host/vans/${van.id}/photos`}>Photos</Tab>
+              <Tab to="photos">Photos</Tab>
             </li>
           </ul>
         </nav>
