@@ -4,12 +4,11 @@ import { vans } from "../../data/vans.js";
 import { getBadgeColor } from "../../utils/utils";
 
 const VanPage = () => {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const typeFilter = searchParams.get("category");
   const displayedVans = typeFilter
     ? vans.filter((van) => van.category.toLowerCase() === typeFilter)
     : vans;
-  console.log(displayedVans)
 
   return (
     <main className="w-5/6 mx-auto md:w-1/2">
