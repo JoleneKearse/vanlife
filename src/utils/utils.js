@@ -11,4 +11,4 @@ const getBadgeColor = (category) => {
   }
 };
 
-export {getBadgeColor};
+export { getBadgeColor };
