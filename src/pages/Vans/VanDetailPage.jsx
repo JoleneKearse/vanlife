@@ -8,6 +8,7 @@ const VanDetailPage = () => {
   const params = useParams();
   const location = useLocation();
   const search = location.state?.search || null;
+  const type = location.state?.type || "all";
   const vanId = +params.id;
   const van = vans.find((van) => van.id === vanId);
 
@@ -20,7 +21,7 @@ const VanDetailPage = () => {
           relative="path"
           className="text-neutral-300 hover:text-neutral-500"
         >
-          Back to all vans
+          Back to {type} vans
         </Link>
       </div>
       <img src={van.image} alt={van.alt} className="mt-8 mb-16 rounded-sm" />
