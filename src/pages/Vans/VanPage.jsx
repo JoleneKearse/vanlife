@@ -33,7 +33,9 @@ const VanPage = () => {
           </li>
           <li
             className={`font-medium text-center py-2 rounded-sm px-6 hover:bg-accent-green hover:text-brand-200 ${
-              typeFilter === "rugged" ? "bg-accent-green text-brand-200" : "bg-brand-200 text-neutral-300"
+              typeFilter === "rugged"
+                ? "bg-accent-green text-brand-200"
+                : "bg-brand-200 text-neutral-300"
             }`}
           >
             <Link to="?category=rugged">Rugged</Link>
@@ -50,6 +52,7 @@ const VanPage = () => {
           <Link
             to={`${van.id}`}
             key={van.id}
+            state={{ search: `?${searchParams.toString()}` }}
             aria-label={`View details for ${van.name}, priced at ${van.price} per day.`}
             className="grid grid-rows-[auto_min-content_auto] gap-4 items-center"
           >
