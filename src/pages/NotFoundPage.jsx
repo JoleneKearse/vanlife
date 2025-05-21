@@ -1,0 +1,24 @@
+import { Link } from "react-router-dom";
+import Button from "../components/Button";
+
+const NotFoundPage = () => {
+  return (
+    <main className="h-full w-1/2 mx-auto flex flex-col gap-8">
+      <h1 className="text-3xl font-bold text-balance">
+        Sorry, the page you were looking for was not found.
+      </h1>
+      <Link to="/" className="w-full">
+        <Button
+          btnColor="bg-neutral-600"
+          btnTextColor="text-neutral-100"
+          btnWeight="font-bold"
+          BtnWidth="w-full"
+        >
+          Return to home
+        </Button>
+      </Link>
+    </main>
+  );
+};
+
+export default NotFoundPage;
