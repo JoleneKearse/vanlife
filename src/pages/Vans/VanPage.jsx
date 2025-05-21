@@ -15,18 +15,34 @@ const VanPage = () => {
       <h1 className="text-4xl font-extrabold mb-8">Explore our van options</h1>
       <nav className="flex justify-between items-center flex-wrap gap-4 mb-16 text-neutral-300">
         <ul className="flex gap-6 items-center flex-wrap w-full">
-          <li className="bg-brand-200 text-neutral-300 font-medium text-center py-2 rounded-sm px-6 hover:bg-brand-500 hover:text-brand-200">
+          <li
+            className={`text-neutral-300 font-medium text-center py-2 rounded-sm px-6 hover:bg-brand-400 hover:text-brand-200 ${
+              typeFilter === "simple" ? "bg-brand-400" : "bg-brand-200"
+            }`}
+          >
             <Link to="?category=simple">Simple</Link>
           </li>
-          <li className="bg-brand-200 text-neutral-300 font-medium text-center py-2 rounded-sm px-6 hover:bg-neutral-500 hover:text-brand-200">
+          <li
+            className={`font-medium text-center py-2 rounded-sm px-6 hover:bg-neutral-500 hover:text-brand-200 ${
+              typeFilter === "luxury"
+                ? "bg-neutral-500 text-brand-200"
+                : "bg-brand-200 text-neutral-300"
+            }`}
+          >
             <Link to="?category=luxury">Luxury</Link>
           </li>
-          <li className="bg-brand-200 text-neutral-300 font-medium text-center py-2 rounded-sm px-6 hover:bg-accent-green hover:text-brand-200">
+          <li
+            className={`font-medium text-center py-2 rounded-sm px-6 hover:bg-accent-green hover:text-brand-200 ${
+              typeFilter === "rugged" ? "bg-accent-green text-brand-200" : "bg-brand-200 text-neutral-300"
+            }`}
+          >
             <Link to="?category=rugged">Rugged</Link>
           </li>
-          <li className="ml-auto underline underline-offset-4 cursor-pointer">
-            <Link to="">Clear filters</Link>
-          </li>
+          {typeFilter && (
+            <li className="ml-auto underline underline-offset-4 cursor-pointer">
+              <Link to="">Clear filters</Link>
+            </li>
+          )}
         </ul>
       </nav>
       <section className="grid grid-cols-2 gap-4 items-center text-neutral-500 mb-20">
