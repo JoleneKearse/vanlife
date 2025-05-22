@@ -15,6 +15,7 @@ const HomePage = () => {
         <Link to="/vans" className="w-full">
           <Button
             btnColor="bg-brand-500"
+            btnColorHover="bg-brand-400"
             btnTextColor="text-neutral-100"
             btnWeight="font-bold"
             btnWidth="w-full"

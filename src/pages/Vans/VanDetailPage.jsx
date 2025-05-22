@@ -34,6 +34,7 @@ const VanDetailPage = () => {
         <p>{van.description}</p>
         <Button
           btnColor="bg-brand-500"
+          btnColorHover="bg-brand-400"
           btnTextColor="text-neutral-100"
           btnWeight="font-bold"
           btnWidth="w-full"

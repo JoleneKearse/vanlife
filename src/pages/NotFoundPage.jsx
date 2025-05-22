@@ -10,6 +10,7 @@ const NotFoundPage = () => {
       <Link to="/" className="w-full">
         <Button
           btnColor="bg-neutral-600"
+          btnColorHover="bg-brand-400"
           btnTextColor="text-neutral-100"
           btnWeight="font-bold"
           BtnWidth="w-full"

@@ -9,6 +9,7 @@ const Cta = () => {
       <Link to="/vans">
         <Button
           btnColor="bg-neutral-500"
+          btnColorHover="bg-brand-400"
           btnTextColor="text-neutral-100"
           btnWeight="font-bold"
           BtnWidth="w-2/5"
