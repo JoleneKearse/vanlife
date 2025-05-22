@@ -3,7 +3,7 @@ import Button from "../components/Button";
 
 const HomePage = () => {
   return (
-    <main className="bg-[url(/hero.webp)] w-full h-[90vh] bg-cover bg-center flex flex-col justify-center items-center text-white gap-8 text-balance text-prose">
+    <main className="bg-[url(/hero.webp)] w-full h-[90vh] bg-cover bg-center flex flex-col justify-center items-center text-white gap-8 text-balance text-prose -mb-40">
       <div className="flex flex-col gap-10 mx-10">
         <h1 className="text-4xl font-extrabold">
           You got the travel plans, we got the travel vans.
