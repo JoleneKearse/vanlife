@@ -11,7 +11,7 @@ const VanPage = () => {
     : vans;
 
   return (
-    <main className="w-5/6 mx-auto md:w-1/2">
+    <main className="w-5-6 md:w-1/2 mx-auto">
       <h1 className="text-4xl font-extrabold mb-8">Explore our van options</h1>
       <nav className="flex justify-between items-center flex-wrap gap-4 mb-16 text-neutral-300">
         <ul className="flex gap-6 items-center flex-wrap w-full">

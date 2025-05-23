@@ -3,7 +3,7 @@ import Button from "../components/Button";
 
 const NotFoundPage = () => {
   return (
-    <main className="h-full w-1/2 mx-auto flex flex-col grow gap-8 py-40">
+    <main className="h-full flex flex-col grow gap-8 py-40 w-5-6 md:w-1/2 mx-auto">
       <h1 className="text-3xl font-bold text-balance">
         Sorry, the page you were looking for was not found.
       </h1>

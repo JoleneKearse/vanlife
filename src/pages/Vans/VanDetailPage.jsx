@@ -13,7 +13,7 @@ const VanDetailPage = () => {
   const van = vans.find((van) => van.id === vanId);
 
   return (
-    <main className="w-5/6 mx-auto md:w-1/2">
+    <main className="w-5-6 md:w-1/2 mx-auto">
       <div className="flex items-center gap-2">
         <img src="/arrow.svg" alt="back arrow" />
         <Link
