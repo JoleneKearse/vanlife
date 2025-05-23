@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { CgProfile } from "react-icons/cg";
 
 const NavBar = () => {
   return (
@@ -12,7 +13,7 @@ const NavBar = () => {
             #VanLife
           </NavLink>
         </div>
-        <div className="flex gap-4 font-semibold">
+        <div className="flex items-center gap-4 font-semibold">
           <NavLink
             to="/host"
             className={({ isActive }) =>
@@ -36,6 +37,9 @@ const NavBar = () => {
             }
           >
             Vans
+          </NavLink>
+          <NavLink>
+            <CgProfile />
           </NavLink>
         </div>
       </nav>
