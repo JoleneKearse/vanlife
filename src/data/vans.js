@@ -109,4 +109,13 @@ const hostVans = [
   },
 ];
 
-export { vans, hostVans };
+const users = [
+  {
+    id: 123,
+    name: "Emily Kearse",
+    email: "trouble@bird.ca",
+    password: "birdietube",
+  },
+];
+
+export { vans, hostVans, users };

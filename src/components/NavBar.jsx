@@ -38,7 +38,7 @@ const NavBar = () => {
           >
             Vans
           </NavLink>
-          <NavLink>
+          <NavLink to="/signin">
             <CgProfile />
           </NavLink>
         </div>
