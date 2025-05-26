@@ -37,4 +37,10 @@ const loginUser = async (creds) => {
   });
 };
 
-export { getBadgeColor, loginUser };
+const formatDate = (date) => {
+  const normalized = date.replace("'", "20");
+  const parsed = new Date(normalized);
+  return parsed.toLocaleDateString("en-US");
+};
+
+export { getBadgeColor, loginUser, formatDate };

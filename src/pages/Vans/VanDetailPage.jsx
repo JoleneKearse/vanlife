@@ -13,8 +13,8 @@ const VanDetailPage = () => {
   const van = vans.find((van) => van.id === vanId);
 
   return (
-    <main className="w-5-6 md:w-1/2 mx-auto">
-      <div className="flex items-center gap-2">
+    <main className="w-5-6 md:w-1/2 md:mx-auto mr-2 ml-2">
+      <div className="flex items-center gap-2 ">
         <img src="/arrow.svg" alt="back arrow" />
         <Link
           to={`..${search}`}

@@ -135,4 +135,10 @@ const reviews = [
   },
 ];
 
-export { vans, hostVans, users, reviews };
+const transactionsData = [
+  { amount: 720, date: "Jan 3, '23", id: "1" },
+  { amount: 560, date: "Dec 12, '22", id: "2" },
+  { amount: 980, date: "Dec 3, '22", id: "3" },
+];
+
+export { vans, hostVans, users, reviews, transactionsData };
