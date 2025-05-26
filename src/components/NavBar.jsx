@@ -4,7 +4,7 @@ import { CgProfile } from "react-icons/cg";
 const NavBar = () => {
   return (
     <header>
-      <nav className="bg-brand-100 text-neutral-300 py-14 flex justify-between px-10">
+      <nav className="bg-brand-100 text-neutral-300 py-14 flex justify-between px-1 md:px-10">
         <div>
           <NavLink
             to="/"
